@@ -15,19 +15,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="안녕하세요."
-        android:textColor="#FF0000"
-        android:textStyle="bold"
-        android:textSize="25sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="반갑습니다."/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
       android:text="아이디"/>
 
     <EditText
@@ -35,6 +22,29 @@
         android:layout_height="wrap_content"
       android:hint="이메일 주소를 입력"
         android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="8글자이상 입력"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="한줄로만 입력"
+        android:singleLine="true"
+        android:imeOptions="actionGo"/>
 
 
   </LinearLayout>
