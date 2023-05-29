@@ -5,23 +5,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:background="#F00099"
     tools:context=".MainActivity">
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-    android:orientation="vertical">
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="135dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
       android:src="@drawable/secondmasterpiece_logo"
-        android:scaleType="center"/>
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-      android:text="아이디"/>
+      android:text="아이디"
+        android:layout_marginTop="10dp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -32,7 +40,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="비밀번호"/>
+        android:text="비밀번호"
+        android:layout_marginTop="10dp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -43,7 +52,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="닉네임"/>
+        android:text="닉네임"
+        android:layout_marginTop="10dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -52,36 +62,42 @@
         android:singleLine="true"
         android:imeOptions="actionGo"/>
 <CheckBox
+    android:visibility="invisible"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:checked="false"
-  android:text="이용약관 동의"/>
+  android:text="이용약관 동의"
+    android:layout_marginTop="10dp"/>
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
       <RadioButton
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-        android:text="남성"/>
+        android:text="남성"
+          android:layout_marginRight="10dp"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-          android:text="여성"/>
+          android:text="여성"
+            android:layout_marginRight="10dp"/>
       <RadioButton
+          android:enabled="false"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-        android:text="공개안함"/>
+        android:text="공개안함"
+          android:layout_marginRight="10dp"/>
 
     </RadioGroup>
 <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="확인"/>
+    android:text="확인"
+    android:layout_marginTop="10dp"/>
 
   </LinearLayout>
 
-
-  </LinearLayout>
