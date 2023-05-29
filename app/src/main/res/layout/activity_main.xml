@@ -12,6 +12,12 @@
       android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="135dp"
+      android:src="@drawable/secondmasterpiece_logo"
+        android:scaleType="center"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,8 +74,6 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
         android:text="공개안함"/>
-
-
 
     </RadioGroup>
 <Button
